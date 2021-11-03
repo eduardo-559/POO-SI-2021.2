@@ -18,7 +18,7 @@ struct Moto {
     bool tem_alguem {false};
 
     Moto(int potencia = 1) :
-    potencia (potencia) {}
+        potencia (potencia) {}
 
     void dados_moto() {
         cout << "\n----- Moto sendo inicializada -----" << endl;
@@ -44,7 +44,7 @@ struct Moto {
         if (!tem_alguem) {
             this->pessoa = pessoa;
             tem_alguem = true;
-            cout << endl << this->pessoa->nome << " subiu na moto!" << endl;
+            cout << "\n" << this->pessoa->nome << " subiu na moto!" << endl;
         }
     }
 
