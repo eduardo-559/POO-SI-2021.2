@@ -8,7 +8,7 @@ struct Pessoa {
     int idade {};
 
     Pessoa(string nome = "?", int idade = 0) :
-    nome (nome), idade (idade) {}
+        nome (nome), idade (idade) {}
 };
 
 struct Moto {
