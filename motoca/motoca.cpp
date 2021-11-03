@@ -29,7 +29,7 @@ struct Moto {
     
     void comprar_tempo(int tempo) {
         this->tempo = tempo;
-        cout << endl << "Tempo comprado com sucesso!!!" << endl;
+        cout << "\n" << "Tempo comprado com sucesso!!!" << endl;
     }
     
     void descer() {   
