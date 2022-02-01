@@ -11,8 +11,7 @@ public:
     int roda;
     int velocidade;
 
-    veiculo(string tipo, string marca, int velocidade, int roda) :
-        tipo(tipo), marca(marca), velocidade(velocidade), roda(roda) {
+    veiculo(string tipo, string marca, int velocidade, int roda) : tipo(tipo), marca(marca), velocidade(velocidade), roda(roda) {
             cout << " Veiculo criado e da marca " << marca << endl;
         }
 
@@ -65,9 +64,7 @@ class carro : public veiculo{
 public:
     bool numPortas{true};
 
-    carro(string tipo, string marca, int velocidade, int roda, string placa, string marcaCarro) :
-        veiculo(tipo, marca, velocidade, roda), placa(placa), marcaCarro(marcaCarro) {
-        }
+    carro(string tipo, string marca, int velocidade, int roda, string placa, string marcaCarro) : veiculo(tipo, marca, velocidade, roda), placa(placa), marcaCarro(marcaCarro) {}
 
     virtual ~carro() {
         cout << "Veiculo da marca " << marcaCarro << " destruido!!!" << endl;
@@ -96,9 +93,7 @@ class moto : public veiculo{
     string marcaMoto;
 
 public:
-    moto(string tipo, string marca, int velocidade, int roda, string placa, string marcaMoto) :
-        veiculo(tipo, marca, velocidade, roda), placa(placa), marcaMoto(marcaMoto) {
-        }
+    moto(string tipo, string marca, int velocidade, int roda, string placa, string marcaMoto) : veiculo(tipo, marca, velocidade, roda), placa(placa), marcaMoto(marcaMoto) {}
 
     virtual ~moto() {
         cout << "Veiculo da marca " << marcaMoto << " destruido!!!" << endl;
