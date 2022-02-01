@@ -52,8 +52,8 @@ public:
         return roda;
     }
 
-    friend ostream& operator<<(ostream& os, veiculo& v) {
-        os << "Tipo: " << v.getTipo() << " , " << "marca: " << v.getMarca() << " , " << "velocidade: " << v.getVelocidade() << " e " << "roda: " << v.getRoda() << endl;
+    friend ostream& operator<<(ostream& os, veiculo& veiculo) {
+        os << "Tipo: " << veiculo.getTipo() << " , " << "marca: " << veiculo.getMarca() << " , " << "velocidade: " << veiculo.getVelocidade() << " e " << "roda: " << veiculo.getRoda() << endl;
         return os;
     }
 };
