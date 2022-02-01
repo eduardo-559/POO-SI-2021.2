@@ -85,8 +85,8 @@ public:
         return marcaCarro;
     }
 
-    friend ostream& operator<<(ostream& os, const carro& c) {
-        os << "Placa do veiculo: " << c.getPlacaCarro() << " , " << "Marca do veicuo: " << c.getMarcaCarro() << " , " << "Quantidade de portas: " << (c.numPortas ? "Duas portas" : "Quatro portas");
+    friend ostream& operator<<(ostream& os, const carro& carro) {
+        os << "Placa do veiculo: " << carro.getPlacaCarro() << " , " << "Marca do veicuo: " << carro.getMarcaCarro() << " , " << "Quantidade de portas: " << (carro.numPortas ? "Duas portas" : "Quatro portas");
         return os;
     }
 };
@@ -112,8 +112,8 @@ public:
         return marcaMoto;
     }
 
-    friend ostream& operator<<(ostream& os, const moto& c) {
-        os << "Placa do veiculo: " << c.getPlacaMoto() << " , " << "Marca do veicuo: " << c.getMarcaMoto() << endl;
+    friend ostream& operator<<(ostream& os, const moto& moto) {
+        os << "Placa do veiculo: " << moto.getPlacaMoto() << " , " << "Marca do veicuo: " << moto.getMarcaMoto() << endl;
         return os;
     }
 };
